@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "terraform-up-and-running-state"
+  bucket = "terraform-up-and-running-state-4"
   # Enable versioning so we can see the full revision history of our
   # state files
   versioning {
@@ -18,7 +18,7 @@ resource "aws_s3_bucket" "terraform_state" {
 terraform {
   backend "s3" {
     # Replace this with your bucket name!
-    bucket         = "terraform-up-and-running-state"
+    bucket         = "terraform-up-and-running-state-4"
     key            = "global/s3/terraform.tfstate"
     region         = "ap-south-1"
     # Replace this with your DynamoDB table name!
