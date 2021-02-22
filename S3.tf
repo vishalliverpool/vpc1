@@ -4,7 +4,7 @@
   # state files
  # versioning {
  #   enabled = true
-  }
+  #}
   # Enable server-side encryption by default
   #server_side_encryption_configuration {
    # rule {
