@@ -18,7 +18,7 @@ phases:
       - export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
       - terraform init
       - terraform plan
-      - terraform destroy -auto-approve
+      - terraform apply -auto-approve
   post_build:
     commands:
       - echo "Nothing to do in the post_build for now"
